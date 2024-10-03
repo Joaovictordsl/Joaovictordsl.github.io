@@ -1,0 +1,50 @@
+baseURL: https://example.org/
+languageCode: en-us
+title: My Portfolio
+theme: ["PaperMod"]
+
+taxonomies:
+  tag: "tags"
+
+params:
+  homeInfoParams:
+    Title: Hello world, Eu sou o João Victor! 👩🏻‍💻
+    Content: Bem vindo ao meu portfolio, onde eu compartilho meus projetos, certificados e experiências.
+
+  socialIcons:
+  - name: github
+    url: 'https://github.com/Joaovictordsl'
+  - name: instagram
+    url: 'https://www.instagram.com/joaovictor_dsl'
+  - name: linkedin
+    url: 'https://linkedin.com/in/joaovictordsl00'
+
+  # for search
+  # https://fusejs.io/api/options.html
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys: ["title", "permalink", "summary", "content"]
+
+menu:
+  main:
+    - identifier: about
+      name: about
+      url: /about/
+      weight: 10
+    - identifier: projects
+      name: projects
+      url: /projects/
+      weight: 20
+    - identifier: tags
+      name: tags
+      url: /tags/
+      weight: 30
+    - identifier: search
+      name: search
+      url: /search/
+      weight: 40
